@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/login_screen"
+android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"
+tools:context="example.org.GrafFinder.WelcomeActivity">
+
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="66dp"
+        android:layout_alignTop="@+id/loginButton"
+        android:layout_centerHorizontal="true" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/loginButton"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="138dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/sign_in_button" />
+
+    <Button
+        android:text="Continue as guest"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/guestButton"
+        android:autoText="false"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/sign_in_button"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

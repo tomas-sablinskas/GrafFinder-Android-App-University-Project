@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">GrafFinder</string>
+    <string name="title_activity_maps">Graffiti Map</string>
+    <string name="facebook_app_id">1820038081575962</string>
+    <string name="title_activity_android_facebook">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="signed_out">You are signed out</string>
+    <string name="api_suspended_connection">Google API Client Connection Suspended</string>
+    <string name="user_logout">User Logged out</string>
+    <string name="user_no_login">You were not logged in</string>
+    <string name="user_login_first">You must Log In first!</string>
+
+    <string name="welcome">Welcome</string>
+    <string name="cancel_login">Login has been canceled</string>
+    <string name="error_login">Error occurred while logging in</string>
+    <string name="logout">Logout</string>
+
+    <string name="title_activity_create_event">CreateEvent</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+</resources>

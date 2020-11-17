@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="example.org.GrafFinder.MainActivity">
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/swipehost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context="example.org.GrafFinder.HistoryActivity"
+                    android:id="@+id/linearLayout2"
+                    android:weightSum="1">
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="188dp"
+                        android:id="@+id/relativeLayout">
+
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/imageView2"
+                            android:src="@drawable/ic_person_black" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="36dp"
+                            android:layout_height="wrap_content"
+                            android:text="Full Name"
+                            android:id="@+id/fullName"
+                            android:layout_toEndOf="@+id/imageView2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="email"
+                            android:id="@+id/userEmail"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/imageView2" />
+                    </RelativeLayout>
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:id="@+id/buttonAdd"
+                        android:src="@drawable/ic_add_a_photo_black_24dp"
+                        android:layout_below="@+id/relativeLayout"
+                        android:layout_alignParentStart="true" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="My uploads"
+                        android:id="@+id/btnUploads"
+                        android:layout_below="@+id/buttonAdd"
+                        android:layout_alignParentStart="true" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Plan the route"
+                        android:id="@+id/btnMyRoute"
+                        android:layout_below="@+id/btnUploads"
+                        android:layout_alignParentStart="true" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Account settings"
+                        android:id="@+id/settings"
+                        android:layout_below="@+id/btnMyRoute"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:text="Swipe to recents | Swipe to map"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/swipem2"
+                        android:textSize="15dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:drawableTop="@drawable/ic_cached_black_24dp"
+                        android:gravity="center" />
+
+                    <ListView
+                        android:id="@+id/graffitiList"
+                        android:layout_below="@+id/button"
+                        android:layout_width="match_parent"
+                        android:layout_height="390dp" />
+
+                    <TextView
+                        android:text=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/swipem"
+                        android:textSize="15dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true" />
+
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"></LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</RelativeLayout>

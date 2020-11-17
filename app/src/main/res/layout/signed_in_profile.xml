@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="320dp"
+        android:id="@+id/listView"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|bottom">
+
+    </ListView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:layout_gravity="center_horizontal|top"
+        android:background="@drawable/nuotrauka"
+        >
+
+        <ImageView
+            android:layout_width="109dp"
+            android:layout_height="109dp"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal|top" />
+
+        <ProfilePictureView
+            android:id="@+id/profileImage"
+            android:background="@mipmap/ic_launcher"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_width="109dp"
+            android:layout_height="109dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:layout_gravity="left|bottom">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/name"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:fontFamily="casual"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="394dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/email"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:fontFamily="casual"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>
